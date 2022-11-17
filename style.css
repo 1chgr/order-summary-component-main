@@ -1,0 +1,162 @@
+
+:root{
+    /*Primary*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /*Neutral*/
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 18px;
+    background-color: var(--Pale-blue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  
+}
+button{
+    font-family: inherit;
+ }
+ p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--Desaturated-blue);
+ }
+ .container p{
+    font-size: 16px;
+}
+.container {
+    background-color: #ffffff;
+    max-width:400px;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
+}
+
+.container img.hero{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+}
+
+
+.container .pricing{
+    margin: 30px auto;
+    padding: 10px;
+    background-color: var(--Very-pale-blue);
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.container .pricing article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .pricing article img{
+    margin-right: 10px;
+
+}
+.container h1{
+    color: hsl(223, 47%, 23%);
+    margin: 10px 0;
+}
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.container p.description{
+    padding: 0 30px
+}
+
+.bg_img{
+    background: url(./images/pattern-background-mobile.svg) no-repeat center/cover ;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+@media(min-width:768px){
+    .bg_img{
+        background: url(./images/pattern-background-desktop.svg) no-repeat center/cover;
+        height: 50vh;
+    }
+    .container{
+        width: 500px;
+    }
+}
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_change{
+    background-color: transparent;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+}
+.btn_change:hover{
+    color: hsl(246, 40%, 60%);
+    text-decoration: none;
+}
+
+.btn_primary{
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 340px;
+    box-shadow: 4px 4px 25px 2px rgb(189, 187, 187) ;
+}
+.btn_secondary{
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+
+}
+.btn_secondary:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.btn_primary:hover{
+    background-color: hsl(246, 40%, 60%);
+}
+
+.attribution { font-size: 16px; text-align: center; }
+.attribution a {
+     color: hsl(228, 45%, 44%);
+    text-decoration: none; }
+
